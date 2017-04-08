@@ -24,8 +24,7 @@ class ServerSolution implements AccountServer {
 				in = new ObjectInputStream(new FileInputStream(file));
 
 				Integer sizeI = (Integer) in.readObject();
-				int size = sizeI.intValue();
-				for (int i=0; i < size; i++) {
+				for (int i=0; i < sizeI.intValue(); i++) {
 					Account acc = (Account) in.readObject();
 					if (acc != null)
 						accountMap.put(acc.getName(), acc);
