@@ -5,6 +5,8 @@ import javax.swing.JFrame;
 /**
  * main method for running the program.
  * @author kevinagary
+ * @date 4/7/2017
+ * (not the actual creation date)
  *
  */
 final class Main {
